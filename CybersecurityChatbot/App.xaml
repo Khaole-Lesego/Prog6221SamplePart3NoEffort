@@ -1,0 +1,10 @@
+<Application x:Class="CybersecurityChatbot.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <!-- This is where the app starts. I'm telling WPF to open MainWindow.xaml when someone launches the app. -->
+    <!-- The Application.Resources section is empty, but I could put global styles or colors here
+         if I wanted to share them across the whole app. -->
+    <Application.Resources>
+    </Application.Resources>
+</Application>
