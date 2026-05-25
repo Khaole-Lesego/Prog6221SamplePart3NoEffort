@@ -1,0 +1,18 @@
+<Page x:Class="CybersecurityChatbot.Pages.HistoryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="#0B1220">
+    <Grid Margin="24">
+        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+        <TextBlock Text="Progress / History" Foreground="#E2E8F0" FontSize="32" FontWeight="Bold"/>
+        <DataGrid x:Name="LogGrid" Grid.Row="1" Margin="0,14,0,0" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Action" Binding="{Binding ActionName}" Width="160"/>
+                <DataGridTextColumn Header="Details" Binding="{Binding Details}" Width="*"/>
+                <DataGridTextColumn Header="Start" Binding="{Binding StartTime}" Width="220"/>
+                <DataGridTextColumn Header="End" Binding="{Binding EndTime}" Width="220"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="120"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
